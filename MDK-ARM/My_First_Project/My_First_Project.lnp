@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"my_first_project\startup_stm32f407xx.o"
+"my_first_project\main.o"
+"my_first_project\gpio.o"
+"my_first_project\stm32f4xx_it.o"
+"my_first_project\stm32f4xx_hal_msp.o"
+"my_first_project\led.o"
+"my_first_project\stm32f4xx_hal_tim.o"
+"my_first_project\stm32f4xx_hal_tim_ex.o"
+"my_first_project\stm32f4xx_hal_rcc.o"
+"my_first_project\stm32f4xx_hal_rcc_ex.o"
+"my_first_project\stm32f4xx_hal_flash.o"
+"my_first_project\stm32f4xx_hal_flash_ex.o"
+"my_first_project\stm32f4xx_hal_flash_ramfunc.o"
+"my_first_project\stm32f4xx_hal_gpio.o"
+"my_first_project\stm32f4xx_hal_dma_ex.o"
+"my_first_project\stm32f4xx_hal_dma.o"
+"my_first_project\stm32f4xx_hal_pwr.o"
+"my_first_project\stm32f4xx_hal_pwr_ex.o"
+"my_first_project\stm32f4xx_hal_cortex.o"
+"my_first_project\stm32f4xx_hal.o"
+"my_first_project\stm32f4xx_hal_exti.o"
+"my_first_project\system_stm32f4xx.o"
+--strict --scatter "My_First_Project\My_First_Project.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "My_First_Project.map" -o My_First_Project\My_First_Project.axf
